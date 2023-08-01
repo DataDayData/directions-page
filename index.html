@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 class="h1" id="h1">Press The Button And view The Directions</h1>
+    <form action="connect.php" method="post">
+        <button type="submit" name="buttonName" value="forward" class="rectangular1" id="rectangular1" onclick="drawArrow('up')">forward</button>
+        <button type="submit" name="buttonName" value="stop" class="stopp" id="stopp">stop</button>
+        <button type="submit" name="buttonName" value="left" class="left" id="left" onclick="drawArrow('left')">left</button>
+        <button type="submit" name="buttonName" value="right" class="right" id="right" onclick="drawArrow('right')">right</button>
+        <button type="submit" name="buttonName" value="backward" class="backward" id="backward" onclick="drawArrow('backward')" >backward</button>
+    </form>
+
+    <canvas id="arrowCanvas" width="50" height="50"></canvas>
+
+    <script src="javascriptcode.js"></script>
+</body>
+
+</html>
